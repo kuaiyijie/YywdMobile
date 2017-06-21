@@ -1,0 +1,1427 @@
+<!doctype html>
+<html>
+
+	<head>
+		
+		<meta charset="utf-8">
+		<title>用药问答 - 康爱多掌上药店</title>
+		<meta name="Robots" content="All" />
+		<meta name="Keywords" content="用药问答,用药常识,用药安全,用药咨询,妇科用药,糖尿病用药,儿童用药" />
+		<meta name="Description" content="康爱多掌上药店提供用药问答,用药常识,用药安全,用药咨询,妇科用药,糖尿病用药,儿童用药方法等全面的用药知识,帮助您合理用药." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<script src="js/jquery-1.5.1.min.js"></script>
+		<style type="text/css">
+			/*全局样式*/
+			
+			body {
+				padding: 0;
+				margin: 0;
+				color: #808080;
+				background: #fff;
+				min-width: 320px;
+				font: 14px/150% "微软雅黑", Verdana, Arial, Helvetica, sans-serif;
+			}
+			
+			html,
+			body,
+			div,
+			span,
+			applet,
+			object,
+			iframe,
+			h1,
+			h4,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			img,
+			dd,
+			dt,
+			dl {
+				padding: 0;
+				margin: 0;
+				border: none;
+			}
+			
+			img {
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul,
+			li {
+				list-style: none outside none;
+				padding: 0;
+				margin: 0;
+			}
+			
+			h1,
+			h4 {
+				color: #404040;
+				font-size: 16px;
+			}
+			
+			a {
+				/*font-size:16px;*/
+				color: #000;
+				text-decoration: none;
+			}
+			
+			a:visited {
+				color: #000;
+				text-decoration: none;
+			}
+			/*清除浮动样式*/
+			
+			.clear {
+				clear: both;
+				height: 0;
+				width: 100%;
+			}
+			
+			.clearfix:after {
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: " ";
+				clear: both;
+				height: 0;
+			}
+			
+			.clearfix {
+				zoom: 1;
+				clear: both;
+			}
+			
+			.kadwrap {
+				width: 320px!important;
+				margin: auto;
+			}
+			
+			.kadbox {
+				width: 300px!important;
+				padding: 10px;
+			}
+			
+			.kadbox a {
+				text-decoration: none;
+			}
+			
+			.pl10 {
+				padding-left: 10px;
+			}
+			/*头部部分*/
+			
+			#header {
+				min-width: 300px;
+				height: 46px;
+				padding: 10px 7px 10px 10px;
+				border-bottom: 1px solid #d3d3d3;
+				text-align: center;
+			}
+			
+			.header_logo {
+				float: left;
+			}
+			
+			.header_logo a img {
+				width: 24px
+			}
+			
+			.header_t {
+				padding-top: 12px;
+				text-align: center;
+				font-size: 16px;
+				color: #000000;
+				font-weight: bold;
+				display: inline-block;
+			}
+			
+			.header_t span {}
+			
+			.header_r {
+				float: right;
+				margin: 13px 0 0 0;
+				height: 22px;
+			}
+			/*backTop*/
+			
+			.topimg {
+				position: fixed;
+				z-index: 99999;
+				right: 15px;
+				display: none;
+			}
+			
+			.topimg .topimg_inn {
+				position: relative
+			}
+			
+			.topimg img {
+				float: right;
+				display: block;
+			}
+			
+			@media screen and (min-width:320px) and (max-width:479px) {
+				.topimg img {
+					width: 40px;
+				}
+				.topimg {
+					bottom: 80px;
+				}
+			}
+			
+			@media screen and (min-width:480px) and (max-width:639px) {
+				.topimg img {
+					width: 65px;
+				}
+				.topimg {
+					bottom: 120px;
+				}
+			}
+			
+			@media screen and (min-width:640px) {
+				.topimg img {
+					width: 80px;
+				}
+				.topimg {
+					bottom: 160px;
+				}
+			}
+			/*底部*/
+			
+			footer {
+				min-width: 320px;
+				width: 100%;
+				padding: 0;
+				margin: 0 auto;
+				height: auto;
+				text-align: center;
+			}
+			
+			.padd11 {
+				padding: 7px 11px 0 11px;
+				line-height: 195%;
+				font-size: 14px;
+			}
+			
+			.userloginf a {
+				display: inline-block;
+				float: left;
+				color: #1b7ce3;
+				font-size: 14px;
+				padding-right: 5px;
+			}
+			
+			.padd11 .backtp {
+				display: inline-block;
+				float: right;
+				color: #7d7d7d;
+				background: url(http://skin.360kad.com/mskin/img/2014/yongyaowenda/shouye.png) no-repeat left;
+				background-size: 17px 15px;
+				text-indent: 20px;
+			}
+			
+			.fot_btn {
+				line-height: 200%;
+				font-size: 12px;
+			}
+			
+			.fot_btn ul {
+				display: inline-block;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			.fot_btn li {
+				display: inline-block;
+				float: left;
+			}
+			
+			.fot_btn li a {
+				display: inline-block;
+				padding: 0 2px;
+				color: #b8b8b8;
+			}
+			
+			.telephone {
+				display: block;
+				margin: 0 auto;
+				width: 250px;
+				height: 20px;
+				padding: 5px 0;
+				line-height: 20px;
+				color: #fff;
+				font-size: 14px;
+				background: #97cc74;
+				border-radius: 5px;
+			}
+			
+			.telephone img {
+				display: inline-block;
+				width: 21px;
+				height: 21px;
+				margin: -3px 18px 0 0;
+				vertical-align: middle;
+			}
+			
+			.foorPHon {
+				width: 250px;
+				height: 30px;
+				line-height: 30px;
+				border-radius: 5px;
+				margin: 0 auto;
+				font-size: 15px;
+				color: #fff;
+				background: #97cc74 url(http://skin.360kad.com/mskin/img/newShouye/phone0910.png)no-repeat 24% center;
+				background-size: 24px 30px
+			}
+			
+			.foorPHon span {
+				margin-left: 40px;
+			}
+			
+			.app_down a {
+				display: inline-block;
+				color: #ff5500;
+				padding-bottom: 10px;
+			}
+			
+			.footmess {
+				display: inline-block;
+				margin: 0 auto;
+				margin-top: 5px;
+				font-size: 12px;
+				line-height: 170%;
+				color: #999999;
+			}
+			
+			.footmess li {
+				display: inline-block;
+				float: left;
+				margin-right: 5px;
+			}
+			
+			.radius45 {
+				display: inline-block;
+				padding: 0 3px;
+				background: #1b7ce3;
+				border-radius: 50%;
+				color: #fff;
+				margin-right: 4px;
+			}
+			
+			.copyrg {
+				display: block;
+				width: 100%;
+				font-size: 14px;
+				line-height: 190%;
+				text-align: center;
+				color: #999999;
+				padding:10px;
+				margin: 5px 5px 5px 0;
+				
+			}
+			/*内容部分*/
+			
+			.Body {
+				margin: 0 auto;
+				padding: 0px;
+				font-size: 100%;
+				color: #000;
+			}
+			
+			.blank2 {
+				height: 10px;
+				background-color: #f5f5f5;
+				border-top: 1px solid #e3e3e3;
+			}
+			/*搜索*/
+			
+			.search {
+				height: 42px;
+				padding: 10px 10px 15px 10px;
+				min-width: 300px;
+				margin: 0 auto;
+				white-space: nowrap;
+				position: relative;
+				z-index: 5;
+			}
+			
+			.search input {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.search_box {
+				height: 40px;
+			}
+			
+			.search_l {
+				display: inline-block;
+				width: 75%;
+				float: left;
+				z-index: 1;
+				position: relative;
+			}
+			
+			.search_l_text {
+				position: relative;
+			}
+			
+			.search_r {
+				display: inline-block;
+				width: 25%;
+				float: right;
+				z-index: 1;
+			}
+			
+			.search_r_btn {
+				overflow: hidden;
+			}
+			
+			.text_search {
+				display: block;
+				width: 100%;
+				height: 38px;
+				outline: none;
+				font-size: 16px;
+				text-indent: 10px;
+				border: 1px solid #68b85e;
+				border-right: none;
+				border-radius: 5px 0 0 5px;
+				overflow: hidden;
+				position: relative;
+				z-index: 1;
+			}
+			
+			.text_search_a {
+				width: 22px;
+				height: 22px;
+				background-color: #FFFFFF;
+				background: url(http://skin.360kad.com/mskin/img/quanbufenlei/sear_clos.png) no-repeat;
+				background-size: 22px 22px;
+				position: absolute;
+				top: 9px;
+				right: 9px;
+				display: block;
+				z-index: 5;
+			}
+			
+			.btn_search {
+				background-color: #68b85e;
+				border: 1px #68b85e solid;
+				border-radius: 0 5px 5px 0;
+				height: 40px;
+				font-size: 14px;
+				line-height: 38px;
+				color: #FFFFFF;
+				text-align: center;
+				font-weight: bold;
+				display: block;
+				width: 100%;
+				-webkit-appearance: button;
+			}
+			
+			.search_ul {
+				position: absolute;
+				left: 0px;
+				background-color: #FFFFFF;
+				z-index: 8888;
+			}
+			
+			.search_ul li {
+				height: 39px;
+				line-height: 39px;
+				text-indent: 10px;
+				color: #626262;
+				background-color: #FFFFFF;
+				border-bottom: 1px solid #e3e3e3;
+			}
+			
+			.search_ul li:last-child {
+				border: none;
+				background: #FFFFFF;
+			}
+			
+			.search_ul li:hover {
+				background-color: #f5f5f5;
+			}
+			/*面包屑*/
+			
+			.nav_a {
+				margin: 10px 0 3px 10px;
+				color: #999999;
+			}
+			
+			.nav_a a {
+				color: #999999;
+			}
+			
+			.nav_a a:last-child {
+				color: #0066cc;
+			}
+			
+			.TabContent {}
+			
+			.TabBox {}
+			/*健康资讯列表*/
+			
+			.TabBox_ul {}
+			
+			.TabBox_ul li {
+				padding: 0 10px;
+				border-bottom: 1px dashed #e3e3e3;
+				height: 43px;
+				line-height: 43px;
+			}
+			
+			.TabBox_ul li:last-child {
+				border-bottom: none;
+			}
+			
+			.TabBox_ul li a {
+				display: block;
+				min-width: 300px;
+				height: 43px;
+				line-height: 43px;
+				color: #000000;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			
+			.TabBox_l_T {
+				font-size: 16px;
+				line-height: 28px;
+				color: #000000;
+				border-top: 1px solid #e3e3e3;
+				border-bottom: 2px solid #658fbd;
+				background-color: #d2e7fd;
+				position: relative;
+				padding-left: 80px;
+				height: 28px;
+			}
+			
+			.TabBox_l_T p {
+				text-indent: 10px;
+				line-height: 28px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				font-weight: bold;
+				color: #3b3b3b;
+				height: 28px;
+				font-size: 16px;
+			}
+			
+			.TabBox_l_T ul {
+				height: 28px;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			
+			.TabBox_l_T ul li {
+				height: 28px;
+				margin: 0px 4px;
+				display: inline-block;
+			}
+			
+			.TabBox_l_T a {
+				color: #000000;
+			}
+			/*用药问答列表*/
+			
+			.TabBox_r_T {
+				height: 43px;
+				line-height: 43px;
+				border-top: 1px solid #ebebeb;
+				border-bottom: 1px solid #ebebeb;
+				padding: 0 10px;
+			}
+			
+			.TabBox_r_T p {
+				float: left;
+				line-height: 43px;
+				font-weight: bold;
+				color: #949494;
+			}
+			
+			.TabBox_r_T a {
+				display: block;
+				float: right;
+				line-height: 43px;
+				color: #38a1f2;
+				font-size: 12px;
+			}
+			/*分类导航按钮*/
+			
+			.classify_a {
+				display: block;
+				height: 44px;
+				line-height: 44px;
+				background-color: #f5f5f5;
+				border-top: 1px solid #e3e3e3;
+				border-bottom: 1px solid #e3e3e3;
+				text-align: center;
+				color: #000;
+				font-weight: bold;
+			}
+			
+			.classify_a span {
+				color: #9b9999;
+				font-weight: bold;
+			}
+			/*App下载*/
+			
+			.download-app {
+				width: 100%;
+				position: fixed;
+				bottom: 0;
+				z-index: 9999;
+			}
+			
+			.download-app .down_app {
+				width: 100%;
+				margin: 0 auto;
+				min-width: 320px;
+				max-width: 640px;
+				height: 4.4em;
+				line-height: 4.285em;
+				vertical-align: middle;
+				background: rgba(77, 77, 88, .9);
+				display: block;
+				position: relative
+			}
+			
+			.download-app .download-logo {
+				width: 2.785em;
+				height: 2.785em;
+				background: url(http://skin.360kad.com/mskin/img/201308/app_icon3.png) no-repeat;
+				background-size: 100% 100%;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 1.07em
+			}
+			
+			.download-app .alogo {
+				display: inline-block;
+				line-height: 1.2em;
+				vertical-align: middle;
+				margin-left: .71em
+			}
+			
+			.download-app .alogo .client-name {
+				color: #FFF;
+				font-size: .9em
+			}
+			
+			.download-app .alogo .client-logon {
+				color: #FFF;
+				font-size: .93em
+			}
+			
+			.download-app .open_now {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 1.5em;
+				float: right
+			}
+			
+			.download-app .open_now .open_btn {
+				background-color: #FFF;
+				vertical-align: middle;
+				text-align: center;
+				padding: .41em;
+				border-radius: .3em
+			}
+			
+			.download-app .close-btn-con {
+				position: absolute;
+				right: 0;
+				top: 0;
+				background-color: #1c1c1f;
+				width: 1.25em;
+				height: 1.25em;
+				display: block;
+				border-bottom-left-radius: 1.25em
+			}
+			
+			.download-app .close-btn-con {
+				position: absolute;
+				right: 0;
+				top: 0;
+				background-color: #1c1c1f;
+				width: 1.25em;
+				height: 1.25em;
+				display: block;
+				border-bottom-left-radius: 1.25em
+			}
+			
+			.download-app .close-btn-con .close-btn-icon {
+				width: .71em;
+				height: .71em;
+				background: url(http://skin.360kad.com/mskin/img/201308/close-icon.png) no-repeat;
+				background-size: 100% 100%;
+				display: inline-block;
+				position: absolute;
+				right: 3px;
+				top: 3px
+			}
+			
+			@media screen and (min-width:320px) {
+				#down_app {
+					font-size: 12px
+				}
+			}
+			
+			@media screen and (min-width:480px) {
+				#down_app {
+					font-size: 18px
+				}
+			}
+			
+			@media screen and (min-width:640px) {
+				#down_app {
+					font-size: 24px
+				}
+			}
+			/*顶部快捷导航*/
+			
+			.nav_ul {
+				margin: 10px;
+				border-bottom: 2px solid #e3e4e8;
+				border-radius: 6px;
+				overflow: hidden;
+				padding: 2px 0 3px 0;
+			}
+			
+			.nav_ul div {
+				display: -webkit-box;
+			}
+			
+			.nav_ul div a {
+				display: block;
+				-webkit-box-flex: 1;
+				display: block;
+				width: 0;
+				height: 35px;
+				line-height: 35px;
+				font-size: 16px;
+				color: #666;
+				text-align: center;
+				background: url(http://skin.360kad.com/mskin/img/newShouye/libj0811.jpg)no-repeat right center;
+				background-size: 2px 20px;
+			}
+			
+			.nav_ul a:last-child {
+				margin-right: 0;
+				margin-bottom: 5px;
+			}
+			
+			.nav_ul div:nth-child(2) a {
+				margin-bottom: 0;
+			}
+			
+			.nav_ul div a:last-child {
+				background: none;
+			}
+			.grycol {
+				padding-left: 3px;
+			}
+			
+			.app_down a {
+				display: block;
+				margin: 0 auto 10px;
+				padding-bottom: 0;
+			}
+			
+			.footwx {
+				width: 250px;
+				height: 30px;
+				line-height: 30px;
+				border-radius: 5px;
+				margin: 0 auto;
+				font-size: 12px;
+				color: #fff;
+				background: #3cb034 url(http://skin.360kad.com/mskin/img/wxlogo.png) no-repeat 8% center;
+				background-size: 28px 23px
+			}
+			
+			.footwx span {
+				margin-left: 35px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--/*头部部分*/-->
+		<header id="header">
+			<section class="header_logo">
+				<a href="http://m.360kad.com"><img src="img/back.png" alt="" title="" style="padding-top:8px;"></a>
+			</section>
+			<span class="header_t">用药问答</span>
+			<section class="header_r">
+				<a href="http://m.360kad.com/fldh/"><img src ="http://skin.360kad.com/mskin/img/2014/yongyaowenda/quanbfl.png" width="24"></a>
+			</section>
+			<!--header_top-end-->
+		</header>
+			<section class="nav_ul clearfix">
+				<div>
+					<a href="zhongliu_file.html">肿瘤用药</a>
+					<a href="/Medication/LiverMedication/">肝病用药</a>
+					<a href="/Medication/NeurologyMedication/" >神经系统</a>
+				</div>
+				<div>
+					<a href="/Medication/OrthoMedication/">风湿骨科</a>
+					<a href="/Medication/hxxt/">呼吸系统</a>
+					<a href="/Medication/xhxt/">消化系统</a>
+				</div>
+				<div>
+					<a href="/Medication/CardiMedication/">心脑血管</a>
+					<a href="/Medication/SkinMedication/">皮肤性病</a>
+					<a href="/Medication/mnxtyy/">泌尿系统</a>
+				</div>
+				<div>
+					<a href="/Medication/wgyy/">五官用药</a>
+					<a href="/Medication/EyeMedication/">眼科用药</a>
+					<a href="/Medication/diabetes/">糖尿病用药</a>
+				</div>
+				<div>
+					<a href="/Medication/BloodMedication/">血液用药</a>
+					<a href="/Medication/mxby/" >慢性疾病</a>
+					<a href="/Medication/jkzq/">健康专区</a>
+				</div>
+				<div>
+					<a href="/Medication/cryp/">成人用品</a>
+					<a href="/Medication/ylqx/">医疗器械</a>
+					<a href="/Medication/zbbj/">滋补保健</a>
+				</div>
+				<div>
+					<a href="/Medication/nkyy/">男科用药</a>
+					<a href="/Medication/fkyy/">妇科用药</a>
+					<a href="/Medication/ekyy/">儿科用药</a>
+				</div>
+				<div>
+					<a href="/Medication/HomeMedication/">家庭药箱</a>
+					<a href="/Medication/jfyy/">减肥用药</a>
+				</div>
+			</section>
+			<!--nav_ul--end-->
+			<!--搜索--begin-->
+			<section class="search">
+				<div class="search_box">
+					<form name="search" action="search_file.html" method="get">
+						<div class="search_l">
+							<div class="search_l_text">
+								<input type="hidden" id="v" name="v" value="w">
+								<a href="javascript:void(0)" class="text_search_a" onClick="$('.text_search').val('');"></a>
+								<input type="text" id="pageText" name="wd" class="text_search"  autocomplete="off" onBlur="if (this.value=='')this.value=''" onFocus="DeleteSearchText(this);" value="六味地黄丸哪个牌子好？" size="38">
+								<ul class="search_ul clearfix"></ul>
+							</div>
+						</div>
+						<div class="search_r">
+							<div class="search_r_btn"><input type="submit" class="btn_search" value="搜资讯">
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<div id="TabContent12805" class="TabContent">
+				<!--TabBox-1-end-->
+				<div class="TabBox">
+					<p class="blank2"></p>
+					<div class="TabBox_r_T">
+						<p>皮肤性病</p>
+						<a href="/Medication/SkinMedication/" >
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607417.shtml" title="">迪康爽芙林可霉素维B6乳膏效果怎么样</a>
+						</li>
+						<li>
+							<a href="/medication/3607416.shtml" title="">氯霉素片和迪康爽芙林可霉素维B6乳膏合用好吗</a>
+						</li>
+						<li>
+							<a href="/medication/3607415.shtml" title="">迪康爽芙林可霉素维B6乳膏有什么副作用</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>男科用药</p>
+						<a href="/Medication/nkyy/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607930.shtml" title="">慢性肾炎能吃金戈吗？</a>
+						</li>
+						<li>
+							<a href="/medication/3607929.shtml" title="">年轻人服用金戈有什么副作用</a>
+						</li>
+						<li>
+							<a href="/medication/3607928.shtml" title="">心脑血管病人能吃金戈吗？</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>肿瘤用药</p>
+						<a href="/Medication/CancerMedication/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3606948.shtml" title="">吃了辛喜鸦胆子油软胶囊能怀孕吗</a>
+						</li>
+						<li>
+							<a href="/medication/3606949.shtml" title="">长期服用辛喜鸦胆子油软胶囊有副作用吗</a>
+						</li>
+						<li>
+							<a href="/medication/3606944.shtml" title="">辛喜鸦胆子油软胶囊真的管用吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>成人用品</p>
+						<a href="/Medication/cryp/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3513353.shtml" title="">国产去氧孕烯炔雌醇片怎么样</a>
+						</li>
+						<li>
+							<a href="/medication/3513354.shtml" title="">怀仁有3倍持久避孕套吗</a>
+						</li>
+						<li>
+							<a href="/medication/3485651.shtml" title="">去氧孕烯炔雌醇片好处</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>妇科用药</p>
+						<a href="/Medication/fkyy/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607798.shtml" title="">红金消结片吃几盒为一疗程呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607799.shtml" title="">莉芙敏片主要疗效是什么呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607802.shtml" title="">莉芙敏片可以吃2年么 有什么副作用</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>肝病用药</p>
+						<a href="/Medication/LiverMedication/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607032.shtml" title="">天士力水飞蓟宾胶囊多少钱一盒呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607034.shtml" title="">水飞蓟宾胶囊作用是什么呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607033.shtml" title="">水林佳水飞蓟宾胶囊吃多久才有效呢</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>神经系统</p>
+						<a href="/Medication/NeurologyMedication/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607072.shtml" title="">晕痛定胶囊价格是多少呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607073.shtml" title="">晕痛定胶囊副作用有哪些呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607074.shtml" title="">晕痛定胶囊的功效有哪些呢</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>风湿骨科</p>
+						<a href="/Medication/OrthoMedication/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607614.shtml" title="">通络生骨胶囊一天吃多少次呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607615.shtml" title="">服用通络生骨胶囊需注意什么呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607618.shtml" title="">通络生骨胶囊具有什么作用呢</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>泌尿系统</p>
+						<a href="/Medication/mnxtyy/" >
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607823.shtml" title="">齐索盐酸坦洛新缓释胶囊是激素药物么</a>
+						</li>
+						<li>
+							<a href="/medication/3607822.shtml" title="">服用盐酸坦洛新缓释胶囊停药多久可以怀孕</a>
+						</li>
+						<li>
+							<a href="/medication/3607821.shtml" title="">盐酸坦洛新缓释胶囊能治早泄吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>心脑血管</p>
+						<a href="/Medication/CardiMedication/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607102.shtml" title="">坎地沙坦酯片是饭前还是饭后吃呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607104.shtml" title="">坎地沙坦酯片怎么停药呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607103.shtml" title="">坎地沙坦酯片对尿酸有影响吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>血液用药</p>
+						<a href="/Medication/BloodMedication/" >
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/1793554.shtml" title="">威士雅R补充叶酸铁片怎样 会有副作用吗</a>
+						</li>
+						<li>
+							<a href="/medication/1793556.shtml" title="">威士雅R补充叶酸铁片吃一个疗程可以吗 能自行停药吗</a>
+						</li>
+						<li>
+							<a href="/medication/1793553.shtml" title="">威士雅R补充叶酸铁片几盒一疗程 价格便宜吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>眼科用药</p>
+						<a href="/Medication/EyeMedication/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/2873334.shtml" title="">并发性白内障吃什么药而障眼明片能吃吗</a>
+						</li>
+						<li>
+							<a href="/medication/2286327.shtml" title="">障眼明片用法与用量怎样</a>
+						</li>
+						<li>
+							<a href="/medication/2286328.shtml" title="">障眼明片有什么作用</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>家庭药箱</p>
+						<a href="/Medication/HomeMedication/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607653.shtml" title="">愈美片是治疗咳嗽效果怎么样</a>
+						</li>
+						<li>
+							<a href="/medication/3607652.shtml" title="">愈美片是不是消炎药物</a>
+						</li>
+						<li>
+							<a href="/medication/3607651.shtml" title="">愈美片是什么药</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>糖尿病用药</p>
+						<a href="/Medication/diabetes/" >
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/2780179.shtml" title="">瑞格列奈片说明书，价格，作用，用法用量</a>
+						</li>
+						<li>
+							<a href="/medication/2287120.shtml" title="">降糖宁胶囊功效如何</a>
+						</li>
+						<li>
+							<a href="/medication/2287119.shtml" title="">降糖宁胶囊价钱贵不贵</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>健康专区</p>
+						<a href="/Medication/jkzq/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/1773818.shtml" title="">高渗枸橼酸盐嘌呤溶液禁忌症状有什么</a>
+						</li>
+						<li>
+							<a href="/medication/1773817.shtml" title="">高渗枸橼酸盐嘌呤溶液是国药准字药物吗</a>
+						</li>
+						<li>
+							<a href="/medication/1773816.shtml" title="">高渗枸橼酸盐嘌呤溶液的不良反应症状有什么</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>消化系统</p>
+						<a href="/Medication/xhxt/" >
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607673.shtml" title="">安斯菲什么时候吃效果最好呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607672.shtml" title="">安斯菲是饭前吃还是饭后吃好呢</a>
+						</li>
+						<li>
+							<a href="/medication/3607671.shtml" title="">安斯菲是什么类型的药呢</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>慢性病药</p>
+						<a href="/Medication/mxby/" >
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/2242195.shtml" title="">盐酸丁丙 诺啡注射液的价格是多少 怎么辨别真假</a>
+						</li>
+						<li>
+							<a href="/medication/2242191.shtml" title="">脂溶性维生素注射液(Ⅱ)怎么样 副作用有吗</a>
+						</li>
+						<li>
+							<a href="/medication/2242196.shtml" title="">盐酸丁丙 诺啡注射液能否长期使用 用法如何</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>呼吸系统</p>
+						<a href="/Medication/hxxt/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3607686.shtml" title="">红草止鼾胶囊吃多久是一个疗程</a>
+						</li>
+						<li>
+							<a href="/medication/3607685.shtml" title="">吃红草止鼾胶囊能怀孕吗</a>
+						</li>
+						<li>
+							<a href="/medication/3607684.shtml" title="">准备怀孕可以吃红草止鼾胶囊吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>五官用药</p>
+						<a href="/Medication/wgyy/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3464327.shtml" title="">普林松通窍耳聋丸的效果如何 可以长期使用吗</a>
+						</li>
+						<li>
+							<a href="/medication/3464326.shtml" title="">通窍耳聋丸效果如何 怎样使用</a>
+						</li>
+						<li>
+							<a href="/medication/3464325.shtml" title="">通窍耳聋丸管用吗 什么时候服用最好</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>儿科用药</p>
+						<a href="/Medication/ekyy/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3586340.shtml" title="">胆维丁乳用法是怎样</a>
+						</li>
+						<li>
+							<a href="/medication/3586339.shtml" title="">胆维丁乳多大宝宝吃</a>
+						</li>
+						<li>
+							<a href="/medication/3586343.shtml" title="">胆维丁乳有副作用吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>滋补保健</p>
+						<a href="/Medication/zbbj/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3554701.shtml" title="">玛卡片什么时间吃好</a>
+						</li>
+						<li>
+							<a href="/medication/3554700.shtml" title="">玛卡片吃了有效果吗</a>
+						</li>
+						<li>
+							<a href="/medication/3554699.shtml" title="">玛卡片吃了怎么会有副作用吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>减肥用药</p>
+						<a href="/Medication/jfyy/">
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3371603.shtml" title="">汤臣倍健左旋肉碱下架的原因是什么</a>
+						</li>
+						<li>
+							<a href="/medication/3371602.shtml" title="">左旋肉碱茶多酚安全吗</a>
+						</li>
+						<li>
+							<a href="/medication/3371601.shtml" title="">汤臣倍健荷叶片会反弹吗</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+					<p class="blank2"></p>
+
+					<div class="TabBox_r_T">
+						<p>医疗器械</p>
+						<a href="/Medication/ylqx/" >
+							更多&gt;&gt;
+						</a>
+					</div>
+					<!--TabBox_l_T-end-->
+					<ul class="TabBox_ul">
+
+						<li>
+							<a href="/medication/3598035.shtml" title="">美皮护增生一年有用吗</a>
+						</li>
+						<li>
+							<a href="/medication/3598034.shtml" title="">医用美皮护使用范围是什么</a>
+						</li>
+						<li>
+							<a href="/medication/3598033.shtml" title="">美皮护4*30一盒多少钱</a>
+						</li>
+
+					</ul>
+					<!--TabBox_ul-end-->
+
+				</div>
+				<!--TabBox-2-end-->
+			</div>
+			<!--TabContent-end-->
+			<a href="http://m.360kad.com/fldh/" class="classify_a">分类导航 <span>>></span></a>
+
+		</section>
+		<!--Boby-end-->
+	
+		
+		<div class="topimg">
+			<div class="topimg_inn">
+				<a href="#" ><img src="http://skin.360kad.com/mskin/img/newShouye/backtop91.png"></a>
+			</div>
+		</div>
+		<!--footer-->
+		<footer>
+			<p class="copyrg">合肥快易捷医药电子商务有限公司</p>			
+			<div class="app_down">
+				<a href="tel:400-167-6900"  alt="客服400电话" rel="nofollow">
+					<p class="foorPHon"><span>400-167-6900</span></p>
+				</a>
+			</div>
+			<p class="copyrg">互联网药品交易服务资格证编号：国A20070002</p>
+			
+		</footer>
+		<script>
+		
+		
+			//关于滑动底部的显示动画
+			var btnElem = document.getElementsByTagName("body")[0];
+			var posEnd = 0;
+window.onresize=function(){var a=$(".search_box").width();$(".search_ul").width(a);}
+	function DeleteSearchText(_this){
+	$(_this).next(".search_ul").html("").height(0);
+	$(_this).val("");
+}
+			function initEvent() {
+				btnElem.addEventListener("touchstart", function(event) {
+					var e = event || window.event;
+					var scrol = $(document).scrollTop();
+					var shikouheigh = $(window).height();
+					var shikouheighaa = shikouheigh * 1.5;
+					if(scrol > shikouheighaa) {
+						$(".topimg").show();
+					}
+					if(scrol < shikouheighaa) {
+						$(".topimg").hide();
+					}
+					$(".topimg").click(function() {
+						$(".topimg").hide();
+					});
+				});
+			};	
+		</script>
+		
+	</body>
+
+</html>

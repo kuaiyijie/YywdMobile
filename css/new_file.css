@@ -1,0 +1,98 @@
+/*全局样式*/
+body{ padding:0; margin:0; color:#808080; background:#fff; min-width:320px; font: 14px/150% "黑体", Verdana, Arial, Helvetica, sans-serif;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,img,dd,dt,dl{ padding:0; margin:0; border:none;}
+img{ padding:0; margin:0;}
+ul,li{ list-style:none outside none; padding:0; margin:0;}
+h1,h2{color:#404040; font-size:16px;}
+a{color:#000; text-decoration:none;}
+a:visited{color:#000;text-decoration:none;}
+
+/*清除浮动样式*/
+.clear{ clear:both; height:0; width:100%;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{zoom: 1; clear:both;}
+.kadwrap{width:320px!important;margin:auto;} 
+.kadbox{width:300px!important; padding:10px;}
+.kadbox a{text-decoration:none;}
+.pl10{padding-left:10px;}
+
+/*头部部分*/
+#header{min-width: 300px;margin: 0 auto;height: 46px;padding: 10px;border-bottom: 1px solid #d3d3d3;text-align: center;}
+.header_logo{float:left;}
+.header_logo img{width:24px;padding-top: 8px;}
+.header_t{font-size: 16px;color: #000000;padding-top: 12px;font-weight: bold;display: inline-block;}
+.header_r{float: right;width:50px;height:40px;margin-top:5px;font-size:12px;}
+.header_r a{display:block;width:100%;height:100%;}
+.header_r a img{display:block;width:25px;margin:0 auto;}
+input{margin: 0;padding: 0;}
+input:focus{outline:none;}
+
+/*高亮关键字、药品名*/
+.info_box .insidelink{color: #129BFF;}
+
+/*导航*/
+.nav_menu{ padding:0 10px; margin-top:10px; }
+.nav_menu ul{border-radius: 5px; background-color: rgb( 255, 255, 255 ); min-width: 298px;border: 1px solid rgb( 220, 219, 219 ); margin:10px 0; font-size: 16px; line-height: 36px; color: #000;}
+.nav_menu ul li{ height:36px; border-bottom: 1px solid rgb( 220, 219, 219 ); }
+.nav_menu ul li:last-child{ border-bottom-width: 0px; border-bottom-style: none; }
+.nav_menu ul li a{ display:block; height:36px; padding:0 10px;}
+.nav_menu ul li a i{ float:right; display:block; width:28px; height:28px; background-image: url(http://skin.360kad.com/mskin/img/201308/shop.gif); background-repeat: no-repeat; background-position: 0px -44px; margin:4px 0;}
+.nav_menu ul li a b{float:right; width:9px; line-height:36px;height:13px;display:block;background:url(http://skin.360kad.com/mskin/img/201308/arrow_04.png) no-repeat;}
+.nav_menu ul li a span{ color:#FF0000;}
+
+
+/*内容部分*/
+.Body{margin:0 auto;font-size:14px;color:#000;font-family:"宋体";}
+.nav_a{padding:6px 10px 6px 10px;color:#959595;}
+.nav_a a{ font-size: 12px; line-height: 12px; color: #959595; display:inline-block; }
+.nav_a a:last-child{color:#1264ba;}
+.Body h1{ text-align: center;}
+.Body .info_come{width:310px;font-size:12px;text-align:center;margin:0 auto;margin-top:5px;color:#908f8f;}
+.Body .info_come .info_text{float:left;margin-left:15px;}
+.Body .info_come a{color:#908f8f;}
+.Body .info_come .time_text{float:right;margin-right:15px;}
+.problem_p{ font-size: 12px; color: #000; background-color: #e9e7e7; border-radius:5px;padding:6px;}
+.problem_p span{color: #b51a1a; }
+.info_box{ margin:0 10px 10px 10px;}
+.info_box p{color: #000; margin:6px 0 6px 0;}
+.Body h2,.Body h3{ font-size: 14px; line-height: 40px; color: #000000; border: 1px solid #e3e3e3;border-width:1px 0 1px;text-indent: 10px;}
+.proone{display:block;margin:0 auto;margin-top:10px;width:269px;border:2px solid #eaeaea; margin-bottom: 5px;}
+.proone .certification img{width:100%; vertical-align: top;}
+.proone .pic{display:block;text-align:center;}
+.proone .pro_name{width:180px;margin:0 auto;font-weight:bold;padding:10px 0 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.proone .pro_name i{font-style:normal;font-family:"宋体";}
+.proone .price{width:180px;margin:0 auto;}
+.proone .price .market_pri{display:inline-block;color:#f00;font-family:"宋体";font-weight:bold;}
+.proone .price .mem_pri{display:inline-block;float:right;font-weight:normal;color:#999999;text-decoration:line-through;}
+.proone .cart{display:block;width:140px;text-align:center;margin:5px auto 10px;padding:5px 0;background:#fd0000;color:#fff;border-radius:20px;}
+.centerAD{display:block;width:270px;margin:0px auto -10px;}
+.centerAD img{width:270px;}
+.phone{display:block;background:#79ba00;font-size:20px;line-height:45px;font-family:"微软雅黑";color:#fff;text-align:center;margin:10px;border-radius:5px;}
+.phone:visited{color:#fff;}
+.phone img{vertical-align:middle;margin:0 10px 0 0;}
+.protwo{display:block;margin:10px 0 0 0;border-bottom:1px dashed #e3e3e3;}
+.protwo .pic{display:block;float:left;margin:0 0 0 10px;}
+.protwo .pic img{width:90px;height:90px;border:1px solid #cccccc;margin:0 10px 10px 0;}
+.protwo .pro_name{padding:0;height:44px;overflow:hidden;overflow:hidden;text-overflow:ellipsis;}
+.protwo .pro_name i{font-style:normal;font-size:14px;font-family:'宋体';}
+.protwo .pro_name .adv{padding:0 10px 0 10px;color:#004b91;}
+.protwo .price{padding:0 0 0 10px;}
+.protwo .price .market_pri{display:inline-block;width:100px;color:#f00;font-family:"宋体";font-weight:bold;}
+.protwo .price .mem_pri{display:inline-block;width:90px;color:#999999;font-weight:normal;text-decoration:line-through;}
+.btns{font-size:14px;margin:4px 0 0 0;}
+.btns .consult{display:inline-block;background:#79ba00;color:#fff;width:90px;height:30px;line-height:30px;text-align:center;border-radius:5px;margin:0 0 0 8px;}
+.btns .lookdetail{display:inline-block;background:#f00;color:#fff;width:90px;height:30px;line-height:30px;text-align:center;border-radius:5px;}
+.phone_header{text-align:left;padding:10px 0 0 10px;}
+
+/*文章列表*/
+.article_ul{ margin:0 10px 10px 10px;}
+.article_ul li{ height:40px; line-height: 40px; overflow:hidden; border-bottom: 1px dashed #e3e3e3; }
+.article_ul li a{ display:block;}
+.xqimg{ display:block;width:270px;margin:0 auto;}
+.xqimg .pic{ display:block;width:180px; height:180px;margin:0 auto;position:relative;}
+.xqimg .pic img{ width:180px; height:180px;display:block;}
+.xqimg .discount{ display: block;position:absolute; bottom:3px;right:3px;width:75px; height:30px; line-height:30px;background-color:#000; opacity:0.7; font-style:normal;color:#FFF; text-align:center;}
+.xqimg .sign{width:269px; height:57px;}
+
+/*隐藏在线咨询什么的?*/
+.Advisory div:first-child {display: none;}
