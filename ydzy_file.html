@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head><script language="javascript" type="text/javascript" async="async" src="js/ctr.js"></script>
+<head>
 <meta charset="utf-8">
 <title>吃了辛喜鸦胆子油软胶囊能怀孕吗-康爱多掌上药店</title>
 <meta name="Robots" content="All" />
@@ -11,6 +11,7 @@
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta content="telephone=no" name="format-detection">
 <script src="js/jquery-1.5.1.min.js"></script>
+<script language="javascript" type="text/javascript" async="async" src="js/ctr.js"></script>
 <link href="css/yywd-des.css" rel="stylesheet" type="text/css"/>
 </head>
 <style>
@@ -185,12 +186,120 @@
 			.footwx span {
 				margin-left: 35px;
 			}
+			/*搜索*/
+			
+			.search {
+				height: 42px;
+				padding: 10px 10px 15px 10px;
+				min-width: 300px;
+				margin: 0 auto;
+				white-space: nowrap;
+				position: relative;
+				z-index: 5;
+			}
+			
+			.search input {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.search_box {
+				height: 40px;
+			}
+			
+			.search_l {
+				display: inline-block;
+				width: 75%;
+				float: left;
+				z-index: 1;
+				position: relative;
+			}
+			
+			.search_l_text {
+				position: relative;
+			}
+			
+			.search_r {
+				display: inline-block;
+				width: 25%;
+				float: right;
+				z-index: 1;
+			}
+			
+			.search_r_btn {
+				overflow: hidden;
+			}
+			
+			.text_search {
+				display: block;
+				width: 100%;
+				height: 38px;
+				outline: none;
+				font-size: 16px;
+				text-indent: 10px;
+				border: 1px solid #68b85e;
+				border-right: none;
+				border-radius: 5px 0 0 5px;
+				overflow: hidden;
+				position: relative;
+				z-index: 1;
+			}
+			
+			.text_search_a {
+				width: 22px;
+				height: 22px;
+				background-color: #FFFFFF;
+				background: url(http://skin.360kad.com/mskin/img/quanbufenlei/sear_clos.png) no-repeat;
+				background-size: 22px 22px;
+				position: absolute;
+				top: 9px;
+				right: 9px;
+				display: block;
+				z-index: 5;
+			}
+			
+			.btn_search {
+				background-color: #e4393c;
+				border: 1px #68b85e solid;
+				border-radius: 0 5px 5px 0;
+				height: 40px;
+				font-size: 14px;
+				line-height: 38px;
+				color: #FFFFFF;
+				text-align: center;
+				font-weight: bold;
+				display: block;
+				width: 100%;
+				-webkit-appearance: button;
+			}
+			
+			.search_ul {
+				position: absolute;
+				left: 0px;
+				background-color: #FFFFFF;
+				z-index: 8888;
+			}
+			
+			.search_ul li {
+				height: 39px;
+				line-height: 39px;
+				text-indent: 10px;
+				color: #626262;
+				background-color: #FFFFFF;
+				border-bottom: 1px solid #e3e3e3;
+			}
+			
+			.search_ul li:last-child {
+				border: none;
+				background: #FFFFFF;
+			}
+			
+			.search_ul li:hover {
+				background-color: #f5f5f5;
+			}
 </style>
-
-
 <body>
 <!--/*头部部分*/-->
-
 <header id="header">
     <section class="header_logo">
         <a href="http://m.360kad.com">
@@ -198,34 +307,47 @@
     </section>
    	<span class="header_t">辛喜鸦胆子油软胶囊</span>
     <section class="header_r">
-        <a href="http://m.360kad.com/fldh/"><img src="http://skin.360kad.com/mskin/img/2014/yongyaowenda/quanbfl.png"/>药品分类</a><section><!--header_top-end-->
+        <a href="http://m.360kad.com/fldh/"><img src="http://skin.360kad.com/mskin/img/2014/yongyaowenda/quanbfl.png"/>药品分类</a><section>
 </header>
 <!--/*内容部分*/-->
 <section class="Body">
-
 <!--顶部导航-begin-->
 	<nav class="nav_a">
     <a href="/" target="_self" title="商城首页">商城首页</a>&nbsp;&gt;
     <a href="/Medication/" target="_self">用药问答</a>&nbsp;&gt;
     <a href="/Medication/CancerMedication/" target="_self" title="肿瘤用药">肿瘤用药</a>&nbsp;</nav>
 <!--顶部导航-end-->
-	
 <!--顶部搜索动态标签-begin-->
-	<script type="text/javascript" src="http://www.360kad.com/Common/Js.aspx?Id=321"></script> 
+	<section class="search">
+				<div class="search_box">
+					<form name="search" action="search_file.html" method="get">
+						<div class="search_l">
+							<div class="search_l_text">
+								<input type="hidden" id="v" name="v" value="w">
+								<a href="javascript:void(0)" class="text_search_a" onclick="$('.text_search').val('');"></a>
+								<input type="text" id="pageText" name="wd" class="text_search" autocomplete="off" onblur="if (this.value=='')this.value=''"  value="补肾" size="38">
+								<ul class="search_ul clearfix" style="width: 377px;"></ul>
+							</div>
+						</div>
+						<div class="search_r">
+							<div class="search_r_btn"><input type="submit" class="btn_search" value="搜药">
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
 <!--顶部搜索动态标签-end-->
-	
 <!--文章名字，来源及发布时间-begin-->
     <h1 style="margin:0 10px 0;">吃了辛喜鸦胆子油软胶囊能怀孕吗</h1>
-    <div class="info_come clearfix"><span class="info_text"><a  href="http://m.360kad.com">来源：康爱多网上药店</a></span> <span class="time_text">发布时间：2017年05月24日</span> </div>
+    <div class="info_come clearfix"><span class="info_text"><a  href="http://m.360kad.com">来源：康爱多网上药店</a></span> 
+    	<span class="time_text">发布时间：2017年05月24日</span>
+    </div>
 <!--文章名字，来源及发布时间-end-->
-
 <!--资讯文章-begin-->
 <div class="info_box">
-		   <p class="problem_p"><span>温馨提示：</span>辛喜鸦胆子油软胶囊是由鸦胆子油为主要原料组成的中药单方制剂，该方来源于部颁中药19册。为国家标准抗癌药。</p><!--problem_p-end-->
+		   <p class="problem_p"><span>温馨提示：</span>辛喜鸦胆子油软胶囊是由鸦胆子油为主要原料组成的中药单方制剂，该方来源于部颁中药19册。为国家标准抗癌药。</p>
 <div style="display:none;"><input id="asearch-kw" value="辛喜" /></div>
 <div id="mpkgPro"></div>
-		   
-      
      <p>　　随着社会的发展，现在的年轻人越来越讲究优生优育，都想要生一个高品质的孩子，甚至好多人提前几个月就开始<a class="insidelink" href="http://baby.360kad.com/by/" title="备孕">备孕</a>，那么这个月吃了<a class="insidelink" href="http://www.360kad.com/product/66315.shtml" target="_blank" title="辛喜">辛喜</a><a class="insidelink" href="http://www.360kad.com/product/26580.shtml" title="鸦胆子油软胶囊">鸦胆子油软胶囊</a>能怀孕吗?</p>
 <p>　　服用辛喜鸦胆子油软胶囊对生育是有一定的影响的，建议最好停药2-3个月后再怀孕，孕妇及哺乳期妇女遵医嘱慎用。</p>
 <p>　　辛喜鸦胆子油软胶囊具有高含量、高智能性、广谱性、疗效好、高吸收率、安全可靠、便于服用等特点。</p>
@@ -236,29 +358,40 @@
 <p>　　4、辛喜鸦胆子油对体液免疫和细胞免疫都有促进作用。</p>
 <p>　　5、辛喜鸦胆子油具有促进骨髓干细胞的造血功能作用。</p>
 <p>　　综上所述，这个月吃了辛喜鸦胆子油软胶囊是不能怀孕的，为了孩子的健康，建议大家一定要在停药以后再要孩子，希望引起大家的重视。</p>
-
-    
-   
-	   
 <script type="text/javascript" src="http://www.360kad.com/Common/Js.aspx?Id=286"></script> 
 </div>
 <!--资讯文章-end-->
-	
 <!--中部推荐产品大图-begin-->
 <div class="proone">
 <!--顶部康爱多标识-start-->
-<script src="http://www.360kad.com/Common/Js.aspx?Id=233"></script><style>
+<section class="search1" id="search">
+        <div class="search_box">
+            <form name="search" id="searchForm" action="http://m.360kad.com/search/Index" method="get">
+            <div class="search_l">
+              <div class="search_l_text1">
+			  <span class="clear_icon1"><img src="http://skin.360kad.com/mskin/img/quanbufenlei/sear_clos.png"></span>
+              <input type="text" id="pageText" name="pageText" class="text_search" onkeyup="SearchText($(this).val(),this);" autocomplete="off" onblur="if (this.value=='')this.value='补肾'" onfocus="DeleteSearchText(this);" value="补肾" size="38">
+              <ul class="search_ul clearfix" style="height: 0px;"></ul>
+              </div>  
+            </div> 
+            <div class="search_r">
+             <div class="search_r_btn">
+            <input type="submit" style="-webkit-appearance:button;" class="btn_search" value="搜药" >
+            </div>
+            </div>
+            </form>
+        </div>   
+    </section>
+<style>
 .Body{font-family:"微软雅黑";}
 </style>
 <style>
 .Body{font-family:"微软雅黑";}
 </style>
-
 <!--顶部康爱多标识-end-->
-        <div id="zbggtjk"><a href="http://m.360kad.com/product/85.shtml?kzone=medication_mmid" onclick="_gaq.push(['_trackEvent', 'WAP用药问答详情页', '中部-推荐产品-大图-2', '0', 0]);"><div class="pic"><img style="width:180px;height:180px;" src="http://image.360kad.com/group1/M00/1F/FA/CgAgEFbVU6CAfPxNAAHTVfckGMc794.jpg_300x300.jpg" alt=""></div><div class="pro_name"><i>同仁堂 牛黄上清丸 6g*10丸</i></div><div class="price"><p><span class="market_pri">￥12.8 起</span></p></div> <p style="padding:0 5px;font-size:12px;line-height:20px;color: #e4393c;overflow:hidden;">【618预热】厂家支持，仅需12.8元。清热泻火，散风止痛。用于头痛眩晕，目赤耳鸣，咽喉肿痛，口舌生疮，牙龈肿痛，大便燥结。</p><p class="cart">查看详情</p></a></div>
+        <div id="zbggtjk"><a href="http://m.360kad.com/product/85.shtml?kzone=medication_mmid" ><div class="pic"><img style="width:180px;height:180px;" src="http://image.360kad.com/group1/M00/1F/FA/CgAgEFbVU6CAfPxNAAHTVfckGMc794.jpg_300x300.jpg" alt=""></div><div class="pro_name"><i>同仁堂 牛黄上清丸 6g*10丸</i></div><div class="price"><p><span class="market_pri">￥12.8 起</span></p></div> <p style="padding:0 5px;font-size:12px;line-height:20px;color: #e4393c;overflow:hidden;">【618预热】厂家支持，仅需12.8元。清热泻火，散风止痛。用于头痛眩晕，目赤耳鸣，咽喉肿痛，口舌生疮，牙龈肿痛，大便燥结。</p><p class="cart">查看详情</p></a></div>
 </div>
 <!--中部推荐产品大图-end-->
-		
 <!---中部-咨询模块-->
 <style type="text/css">
 /*咨询模块*/
@@ -268,9 +401,6 @@
 .Advisory div a:last-child{ margin-right:0px;}
 .Advisory div a img{display:block;width:100%;}
 </style>
-
-     
- 
 <div id="alsobuy">
 	<h3>看了本篇文章的人还买了</h3>
 	<li>
@@ -313,7 +443,7 @@
 							<a  href="http://m.360kad.com/product/85.shtml?kzone=medicationalsobuy" rel="nofollow"><img style="width:130px;height:130px;" src="http://image.360kad.com/group1/M00/1F/FA/CgAgEFbVU6CAfPxNAAHTVfckGMc794.jpg_180x180.jpg" alt="同仁堂 牛黄上清丸 6g*10丸" title="同仁堂 牛黄上清丸 6g*10丸"></a>
 						</div>
 						<p></p>
-						<a onclick="_gaq.push(['_trackEvent', 'WAP用药问答详情页', '看了本篇文章的人还买了', '0', 0]);" href="http://m.360kad.com/product/85.shtml?kzone=medicationalsobuy" title="同仁堂 牛黄上清丸 6g*10丸">
+						<a  href="http://m.360kad.com/product/85.shtml?kzone=medicationalsobuy" title="同仁堂 牛黄上清丸 6g*10丸">
 							<div style="margin-left:130px;height:130px;line-height:22px;padding-top:10px;border-bottom:1px solid #ECECEC;padding-right:10px;">
 								<p style="max-height:45px;overflow:hidden;color:#333;font: 14px/22px 微软雅黑;">同仁堂 牛黄上清丸 6g*10丸</p>
 								<p style="margin-bottom:10px;color: #999999;height:44px;overflow:hidden;font-size:12px;">【618预热】厂家支持，仅需12.8元。清热泻火，散风止痛。用于头痛眩晕，目赤耳鸣，咽喉肿痛，口舌生疮，牙龈肿痛，大便燥结。</p>
@@ -357,20 +487,18 @@
   <li><a href="/medication/3597451.shtml" title="辛喜肺癌晚期可以吃吗">辛喜肺癌晚期可以吃吗</a></li>
   <li><a href="/medication/3597452.shtml" title="辛喜怎么吃好">辛喜怎么吃好</a></li>
 </ul>
-
 <!--底部广告图及搜索动态标签-->
-	
 
 </section> <!--Boby-end-->
 <!--新版底部-begin-->
 	<footer>
 			<p class="copyrg">合肥快易捷医药电子商务有限公司</p>			
 			<div class="app_down">
-				<a href="tel:4008808488" onclick="_gaq.push(['_trackEvent', 'wap公共底部', '底部-客服400电话-按钮', '0', 0]);" alt="客服400电话" rel="nofollow">
-					<p class="foorPHon"><span>400-8808-488</span></p>
+				<a href="tel:400-167-6900" alt="客服400电话" rel="nofollow">
+					<p class="foorPHon"><span>400-167-6900</span></p>
 				</a>
 				
-			<p class="copyrg">copyright &copy;2010-2015 康爱多网上药店 版权所有</p>
+			<p class="copyrg">互联网药品交易服务资格证编号：国A20070002</p>
 		</footer>
 <!--新版底部-end-->
 
@@ -394,8 +522,5 @@ $(function() {
 });
 //使用图片延迟加载的时候必须先导入JQ库存以及图片加载的插件库 
 </script>
-<!--各种统计代码↓-->
-
-
 </body>
 </html>
