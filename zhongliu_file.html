@@ -39,26 +39,16 @@ a:visited{color:#000;text-decoration:none;}
 .header_t span{  }
 .header_r{ float:right;margin:13px 0 0 0;height:22px;}
 
-/*backTop*/
-.topimg{position:fixed;z-index:99999;right:15px;display:none;}
-.topimg .topimg_inn{position:relative}
-.topimg img{float:right;display:block;}
-@media screen and (min-width:320px) and (max-width:479px){.topimg img{width:40px;}.topimg{bottom:80px;}}
-@media screen and (min-width:480px) and (max-width:639px){.topimg img{width:65px;}.topimg{bottom:120px;}}
-@media screen and (min-width:640px){.topimg img{width:80px;}.topimg{bottom:160px;}}
-
 /*底部*/
 footer{min-width:320px;width:100%;padding:0;margin:0 auto;height:auto;text-align:center;}
-.padd11{padding:7px 11px 0 11px;line-height:195%;font-size:14px;}
 .userloginf a{display:inline-block;float:left;color:#1b7ce3;font-size:14px;padding-right:5px;}
-.padd11 .backtp{display:inline-block;float:right;color:#7d7d7d; background:url(http://skin.360kad.com/mskin/img/2014/yongyaowenda/shouye.png) no-repeat left; background-size:17px 15px; text-indent:20px;}
 .fot_btn{line-height:200%;font-size:12px;}
 .fot_btn ul{display:inline-block;margin:0 auto;text-align:center;}
 .fot_btn li{display:inline-block;float:left;}
 .fot_btn li a{display:inline-block;padding:0 2px;color:#b8b8b8;}
 .telephone{display:block;margin:0 auto;width:250px;height:20px;padding:5px 0;line-height:20px;color:#fff;font-size:14px;background:#97cc74;border-radius:5px;}
 .telephone img{display:inline-block;width:21px;height:21px;margin:-3px 18px 0 0;vertical-align:middle;}
-.foorPHon{width:250px;height:30px;line-height:30px;border-radius:5px;margin:0 auto;font-size:15px;color:#fff;background:#97cc74 url(http://skin.360kad.com/mskin/img/newShouye/phone0910.png)no-repeat 24% center;background-size:24px 30px}
+.foorPHon{width:250px;height:30px;line-height:30px;border-radius:5px;margin:0 auto;font-size:15px;color:#fff;background:#97cc74 url(img/phone0910.png)no-repeat 24% center;background-size:24px 30px}
 .foorPHon span{margin-left:40px;}
 .app_down a{display:inline-block;color:#ff5500;padding-bottom:10px;}
 .footmess{display:inline-block;margin:0 auto;margin-top:5px;font-size:12px;line-height:170%;color:#999999;}
@@ -79,7 +69,7 @@ footer{min-width:320px;width:100%;padding:0;margin:0 auto;height:auto;text-align
 .search_r{display:inline-block; width:25%; float:right;z-index:1;}
 .search_r_btn{overflow:hidden;}
 .text_search { display:block; width:100%; height: 38px; outline: none; font-size: 16px; text-indent:10px; border:1px solid #68b85e; border-right:none;border-radius:5px 0 0 5px;overflow:hidden; position:relative; z-index:1; }
-.text_search_a{ width:22px; height:22px; background-color:#FFFFFF;background: url(http://skin.360kad.com/mskin/img/quanbufenlei/sear_clos.png) no-repeat; background-size:22px 22px; position:absolute; top:9px; right:9px; display:block; z-index:5;}
+.text_search_a{ width:22px; height:22px; background-color:#FFFFFF;background: url(img/kouweizuofa_btn_clos.png) no-repeat; background-size:22px 22px; position:absolute; top:9px; right:9px; display:block; z-index:5;}
 .btn_search {-webkit-appearance:button; background-color:#68b85e; border:1px #68b85e solid;border-radius:0 5px 5px 0;height: 40px; font-size:14px; line-height: 38px; color: #FFFFFF; text-align: center;font-weight: bold;display:block; width:100%;}
 .search_ul{ position:absolute; left:0px; background-color:#FFFFFF;z-index:8888;}
 .search_ul li{ height:39px; line-height:39px; text-indent: 10px; color:#626262; background-color:#FFFFFF;border-bottom: 1px solid #e3e3e3; }
@@ -104,13 +94,16 @@ footer{min-width:320px;width:100%;padding:0;margin:0 auto;height:auto;text-align
 .TabBox_ul li a:hover{background-color:#5f5f5;}
 
 /*翻页*/
-.page{line-height:30px; padding:12px 10px; text-align:center;}
-.page a,.page .pagecss span{ padding:3px 10px;border:1px solid #ebebeb; color:#000;  text-decoration:none; display:inline-block; height:24px; line-height:25px; margin:0 0 5px 0;}
-.page a.dot,.page a.dot:hover{  margin-right:5px; padding:0; border:0;}
-.page a:hover,.page .hover{background-color:#f5f5f5;}
-.num_pri{  height:25px; line-height:25px;padding-top:5px; font-family:"宋体";}
-.num_pri .mem_pri{ padding-left:10px; color:#fe0000; font:bold 14px/18px Arial; }
-.num_pri .pre_pri{ padding-left:20px; color:#666666; text-decoration:line-through; font: normal 12px Arial, Helvetica, sans-serif; }
+.evpage_box{ display:table; width:100%; margin:15px 0; }
+.page_left{ display:table-cell; text-align:right; padding-right:12px; }
+.page_right{ display:table-cell; text-align:left; padding-left:12px; }
+.page_left input, .page_right input{ border-style: solid; border-width: 1px; border-color: rgb( 151, 150, 150 ); border-radius: 3px; 
+background: url(img/coupon_bg4.png) repeat-x 0px -0px; width: 55px; height: 28px; line-height:27px; color: #004b91; text-align: center; outline: none; }
+.page_center{ display:table-cell; text-align:center; height:30px; padding: 0;}
+.page_select { position:relative; height:30px;  background: url(img/coupon_bg4.png) repeat-x 0px -0px; }
+.page_select .pageIndex{ height:28px; line-height:30px; padding:0 20px; border: 1px solid #c8c8c8; }
+.page_select .pageIndex .down{ display:inline-block; border:1px solid #535353; border-width:0 1px 1px 0; width:8px; height:8px; line-height:1px; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); -o-transform:rotate(45deg); position:relative; left:8px; top:-3px; }
+.page_select .pageList{ position:absolute; left:0; top:0; z-index:100; border:none; height:30px; width:100%; -moz-opacity: 0; opacity:0; filter: alpha(opacity=0); }
 /*分类导航按钮*/
 .classify_a{ display:block; height:44px; line-height:44px; background-color:#f5f5f5;border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; text-align: center; color:#000; font-weight: bold; }
 .classify_a span{ color: #9b9999; font-weight: bold; }
@@ -119,9 +112,9 @@ footer{min-width:320px;width:100%;padding:0;margin:0 auto;height:auto;text-align
 <body>
 <!--/*头部部分*/-->
 <header id="header">
-    	<section class="header_logo"><a href="http://m.360kad.com"><img src="img/back.png" alt="康爱多掌上药店" title="康爱多掌上药店"></a></section>
+    	<section class="header_logo"><a href="#"><img src="img/back.png" alt="康爱多掌上药店" title="康爱多掌上药店"></a></section>
        <span class="header_t">肿瘤用药</span>
-       <section class="header_r"><a href="http://m.360kad.com/Category_4073/Index.aspx"><img src="http://skin.360kad.com/mskin/img/2014/yongyaowenda/quanbfl.png" width="24"></a>
+       <section class="header_r"><a href="#"><img src="img/quanbfl.png" width="24"></a>
        </section>
   <!--header_top-end-->
 </header>
@@ -134,7 +127,7 @@ footer{min-width:320px;width:100%;padding:0;margin:0 auto;height:auto;text-align
 <!--搜索--begin-->
     <section class="search" id="search">
         <div class="search_box">
-            <form  name="search" id="searchForm" action="http://news.m.search.360kad.com/news" method="get">
+            <form  name="search" id="searchForm" action="#" method="get">
             <div class="search_l">
               <div class="search_l_text">
                <input type="hidden" id="v" name="v"   value="w" >
@@ -170,23 +163,29 @@ footer{min-width:320px;width:100%;padding:0;margin:0 auto;height:auto;text-align
             <li><a href="/medication/3606936.shtml" title="">奇诺必通去氧氟尿苷胶囊西药何处有卖</a></li>
     </ul>
     <!--翻页-->
-    <div class="page">
-    <span id="pe100_page_内容信息列表_普通式9移动" class="pagecss"><!--{pe.begin.pagination}-->
-    	<a class="pre" href="http://m.360kad.com/Medication/CancerMedication/List_2306.shtml">上一页</a>
- <span class="hover">1</span>
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2305.shtml">2</a>
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2304.shtml">3</a>
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2303.shtml">4</a>
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2302.shtml">5</a> 
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2301.shtml">6</a>
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2300.shtml">7</a> 
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2299.shtml">8</a> 
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2298.shtml">9</a> 
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2297.shtml">10</a> 
-	 <a href="http://m.360kad.com/Medication/CancerMedication/List_2296.shtml">11</a> 
-	<a class="next" href="http://m.360kad.com/Medication/CancerMedication/List_2305.shtml">下一页</a><!--{pe.end.pagination}--></span>
-	    </div> <!--翻页-end--> 
-	    <a href="http://m.360kad.com/Category_4073/Index.aspx" class="classify_a">分类导航 <span>>></span></a>
+    <div class="evpage_box">
+    <div class="page_left">
+        <input type="button" value="上一页" style="color:#b3b1b1">  
+    </div>
+    <div class="page_center"><div class="page_select">
+    <div class="pageIndex"><span style="color:#b51a1a">1</span>/9<span class="down"></span></div>
+    <select class="pageList" onchange="location.href=this.value;">
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=1" selected="selected">1/9</option>
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=2">2/9</option>
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=3">3/9</option> 
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=4">4/9</option>
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=5">5/9</option>
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=6">6/9</option>
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=7">7/9</option> 
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=8">8/9</option>
+        <option value="/news?v=w&amp;wd=六味地黄丸哪个牌子好？&amp;pageIndex=9">9/9</option>  
+    </select>
+    </div></div>
+    <div class="page_right">
+        <input type="button" value="下一页"> 
+    </div>
+    </div>
+	    <a href="＃" class="classify_a">分类导航 <span>>></span></a>
 </section> <!--Boby-end--> 
 <!--/*公共底部*/-->
 <style type="text/css">
@@ -196,7 +195,7 @@ footer{min-width:320px;width:100%;padding:0;margin:0 auto;height:auto;text-align
 .footwx span{margin-left:35px;}
 </style>
 <!--backTop-->
-<div class="topimg"><div class="topimg_inn"><a href="#"><img src="http://skin.360kad.com/mskin/img/newShouye/backtop91.png"></a></div></div>
+
 <!--footer-->
 <footer>
    	<p class="copyrg">合肥快易捷医药电子商务有限公司</p>
